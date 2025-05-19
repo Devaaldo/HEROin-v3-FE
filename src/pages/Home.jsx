@@ -1,95 +1,95 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Home.css"; // Asegúrate de crear este archivo CSS para los estilos personalizados
 
 function Home() {
 	return (
-		<div className="home-page">
-			<div className="text-center mb-5">
-				<h1 className="display-4 fw-bold">
-					<span className="text-primary">HERO</span>in
-				</h1>
-				<p className="lead">
-					Sistem Pakar Identifikasi Dampak Negatif Kecanduan Game Online di
-					Kalangan Mahasiswa
-				</p>
-			</div>
-
-			<div className="row mb-5">
-				<div className="col-md-6">
-					<div className="card shadow-sm h-100">
-						<div className="card-body">
-							<h2 className="card-title h4">Apa itu HEROin?</h2>
-							<p className="card-text">
-								HEROin adalah sistem pakar yang dirancang untuk membantu
-								mengidentifikasi dampak negatif kecanduan game online pada
-								mahasiswa. Menggunakan metode backward chaining dan certainty
-								factor, sistem ini memberikan analisis komprehensif terhadap
-								tingkat kecanduan game dan dampaknya.
-							</p>
-						</div>
-					</div>
+		<div className="container py-5">
+			{/* Hero Section */}
+			<div className="row align-items-center mb-5">
+				<div className="col-lg-6">
+					<h1 className="display-4 fw-bold mb-2">
+						<span className="hero-title">HERO</span>in
+					</h1>
+					<h3 className="mb-3">Sahabat candu-mu</h3>
+					<p className="lead mb-4">
+						Sistem Pakar Identifikasi Dampak Negatif Kecanduan Game Online di
+						Kalangan Mahasiswa
+					</p>
+					<Link to="/user-info" className="btn btn-primary btn-lg px-4 py-2">
+						Mulai Diagnosa
+					</Link>
 				</div>
-
-				<div className="col-md-6">
-					<div className="card shadow-sm h-100">
-						<div className="card-body">
-							<h2 className="card-title h4">Mengapa Penting?</h2>
-							<p className="card-text">
-								Kecanduan game online dapat berdampak serius pada prestasi
-								akademik, kesehatan mental, dan kehidupan sosial mahasiswa.
-								Identifikasi dini dapat membantu mencegah dampak jangka panjang
-								dan memberikan intervensi yang tepat.
-							</p>
-						</div>
+				<div className="col-lg-6">
+					<div className="hero-image-container">
+						<img
+							src="/src/assets/dontol.png"
+							alt="Gaming Addiction Illustration"
+							className="img-fluid hero-image"
+						/>
 					</div>
 				</div>
 			</div>
 
-			<div className="row mb-5">
-				<div className="col-md-4">
-					<div className="card shadow-sm h-100">
-						<div className="card-body text-center">
-							<i className="bi bi-search fs-1 text-primary mb-3"></i>
-							<h3 className="card-title h5">Identifikasi</h3>
-							<p className="card-text">
-								Sistem akan mengidentifikasi tingkat kecanduan game online
-								berdasarkan jawaban atas pertanyaan yang diajukan.
-							</p>
+			{/* Services Section */}
+			<div className="services-section mt-5">
+				<div className="d-flex align-items-center mb-4">
+					<div className="service-badge me-3">Services</div>
+					<p className="mb-0">
+						Kami memudahkan identifikasi tingkat dan dampak kecanduan game
+						online
+					</p>
+				</div>
+
+				<div className="row g-4">
+					{/* Service Card 1 */}
+					<div className="col-md-6 col-lg-3">
+						<div className="card service-card bg-dark text-white h-100">
+							<div className="card-body position-relative p-4">
+								<div className="card-tag">Problem Solving</div>
+								<div className="icon-container">
+									<span className="service-icon">📺</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					{/* Service Card 2 */}
+					<div className="col-md-6 col-lg-3">
+						<div className="card service-card bg-light h-100">
+							<div className="card-body position-relative p-4">
+								<div className="card-tag">Time Management</div>
+								<div className="icon-container">
+									<span className="service-icon">⏱️</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					{/* Service Card 3 */}
+					<div className="col-md-6 col-lg-3">
+						<div className="card service-card purple-bg text-white h-100">
+							<div className="card-body position-relative p-4">
+								<div className="card-tag">Questionnaire</div>
+								<div className="icon-container">
+									<span className="service-icon">📝</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					{/* Service Card 4 */}
+					<div className="col-md-6 col-lg-3">
+						<div className="card service-card bg-light h-100">
+							<div className="card-body position-relative p-4">
+								<div className="card-tag">Analytics and Insight</div>
+								<div className="icon-container">
+									<span className="service-icon">📊</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<div className="col-md-4">
-					<div className="card shadow-sm h-100">
-						<div className="card-body text-center">
-							<i className="bi bi-graph-up fs-1 text-primary mb-3"></i>
-							<h3 className="card-title h5">Analisis</h3>
-							<p className="card-text">
-								Menggunakan metode backward chaining dan certainty factor untuk
-								analisis tingkat kecanduan dan dampaknya.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div className="col-md-4">
-					<div className="card shadow-sm h-100">
-						<div className="card-body text-center">
-							<i className="bi bi-clipboard-data fs-1 text-primary mb-3"></i>
-							<h3 className="card-title h5">Laporan</h3>
-							<p className="card-text">
-								Hasil analisis dapat diunduh dalam format Excel atau PDF untuk
-								keperluan dokumentasi dan tindak lanjut.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div className="text-center">
-				<Link to="/user-info" className="btn btn-primary btn-lg">
-					Mulai Sekarang
-				</Link>
 			</div>
 		</div>
 	);

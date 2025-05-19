@@ -1,0 +1,94 @@
+* Home.css */
+
+/* Color principal */
+:root {
+	--primary-color: #9630fb;
+	--dark-bg: #1e1e1e;
+}
+
+/* Hero Section */
+.hero-title {
+	color: var(--primary-color);
+}
+
+.hero-image-container {
+	position: relative;
+	padding: 20px;
+}
+
+.hero-image {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(150, 48, 251, 0.2);
+}
+
+/* Services Section */
+.services-section {
+	margin-top: 4rem;
+}
+
+.service-badge {
+	background-color: var(--primary-color);
+	color: white;
+	padding: 8px 16px;
+	border-radius: 50px;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.service-card {
+	border-radius: 12px;
+	overflow: hidden;
+	transition: transform 0.3s;
+	border: none;
+	min-height: 180px;
+}
+
+.service-card:hover {
+	transform: translateY(-5px);
+}
+
+.card-tag {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 4px 10px;
+	border-radius: 4px;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.icon-container {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+.service-icon {
+	font-size: 2rem;
+}
+
+.purple-bg {
+	background-color: var(--primary-color);
+}
+
+/* Button styles */
+.btn-primary {
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+	border-radius: 8px;
+	padding: 10px 24px;
+	font-weight: 600;
+}
+
+.btn-primary:hover {
+	background-color: #8020e0;
+	border-color: #8020e0;
+}
+
+/* Dark card */
+.bg-dark {
+	background-color: var(--dark-bg) !important;
+}

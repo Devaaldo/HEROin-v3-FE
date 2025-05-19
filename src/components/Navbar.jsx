@@ -1,12 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Navbar() {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+		<nav
+			className="navbar navbar-expand-lg"
+			style={{ backgroundColor: "#FFFFFF" }}
+		>
 			<div className="container">
-				<Link className="navbar-brand" to="/">
-					<span className="fw-bold">HERO</span>in
+				<Link className="navbar-brand text-white" to="/">
+					<img
+						src={logo}
+						alt="HEROin Logo"
+						className="me-2"
+						style={{ height: "50px", width: "auto" }}
+					/>
 				</Link>
 				<button
 					className="navbar-toggler"
@@ -22,27 +31,20 @@ function Navbar() {
 				<div className="collapse navbar-collapse" id="navbarNav">
 					<ul className="navbar-nav ms-auto">
 						<li className="nav-item">
-							<Link className="nav-link" to="/">
+							<Link className="nav-link text-black" to="/">
 								Home
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/user-info">
+							<Link className="nav-link text-black" to="/user-info">
 								Identitas
 							</Link>
 						</li>
-						<li className="nav-item">
-							<Link className="nav-link" to="/hypothesis">
-								Hipotesis
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link className="nav-link" to="/questionnaire">
-								Kuesioner
-							</Link>
-						</li>
-						<li className="nav-item">
-							<Link className="nav-link" to="/dashboard">
+						<li className="nav-item ms-2">
+							<Link
+								className="btn btn-outline-dark rounded-pill"
+								to="/dashboard"
+							>
 								Dashboard
 							</Link>
 						</li>
