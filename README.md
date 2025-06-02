@@ -315,4 +315,4 @@ npm run lint --fix
 
 ---
 
-**Developed with ❤️ for educational purposes and gaming addiction awareness**
+
